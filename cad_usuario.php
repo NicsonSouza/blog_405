@@ -9,6 +9,7 @@
 </head>
 <body>
     
+<!-- navbar para controle de navegação e pesquisa -->
 <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -25,7 +26,7 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Pesquisa</button>
                     </form>
                 </div>
@@ -33,22 +34,31 @@
         </nav>
     </section>
 
+    <!-- formulario de cadastro -->
     <form action="cad_insert_bd.php" method="POST">
-        <div class="mx-auto mt-5 col-5">
-            <h1 class="text-center">Cadastrar de usuário</h1>
+        <div class="mx-auto mt-5" style="max-width: 400px;">
+            <h1 class="text-center">Cadastrar usuário</h1>
             <label class="form-label">Nome: </label>
             <input class="form-control" type="text" placeholder="Nome Completo" name="nome">
             <label class="form-label">Avatar: </label>
-            <input class="form-control" type="text" placeholder="Exemplo Usuario123" name="avatar">
+            <input class="form-control" type="text" placeholder="Usuario123" name="avatar">
             <label class="form-label">Email: </label>
-            <input class="form-control" type="email" placeholder="digite seu email" name="email">
+            <input class="form-control" type="email" placeholder="Email" name="email">
             <label class="form-label">Senha: </label>
-            <input class="form-control" type="password" placeholder="insira a senha" name="senha">
+            <input class="form-control" type="password" placeholder="Senha" name="senha">
             <div class="text-center">
             <button class="btn btn-primary mt-3" type="submit">Cadastrar</button>
             </div>    
         </div>
     </form>
 
+    <!-- rodapé -->
+    <footer>
+    <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
+        <a href="">Contato</a>
+    </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

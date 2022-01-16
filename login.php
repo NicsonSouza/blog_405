@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- navbar para naveção e pesquisa -->
 <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -25,7 +26,7 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Pesquisa</button>
                     </form>
                 </div>
@@ -33,8 +34,9 @@
         </nav>
     </section>
 
-<form action="" method="POST">
-        <div class="mx-auto mt-5 col-3" style="border-radius: 15%; padding: 10px; border: solid 2px;">
+    <!-- formulario de cadastro de usuario -->
+    <form action="" method="POST">
+        <div class="mx-auto mt-5 p-2" style="max-width: 350px; border-radius: 15%; border: solid 2px;">
             <h1 class="text-center">Login</h1>
             <label class="form-label">Email: </label>
             <input class="form-control" type="email" placeholder="email" name="">
@@ -45,5 +47,14 @@
             </div>    
         </div>
     </form>
+
+    <!-- rodapé -->
+    <footer>
+        <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
+            <a href="">Contato</a>
+        </div>
+    </footer>
+    
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

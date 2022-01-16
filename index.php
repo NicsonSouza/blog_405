@@ -15,8 +15,7 @@
     <header>
         <div class="conteudo">
             <img src="https://place-hold.it/1028x280" alt="">
-            <div class="titulo"><h1>Banana Blog</h1></div>
-            <div class="subtitulo"><h4>Expressando palavras ideias e pensamentos, sobre a vida, o universo e tudo mais…</h4></div>
+            <div class="subtitulo"><h3>subtitulo</h3></div>
             <div class="media-social">
             <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -24,8 +23,9 @@
         </div>
     </header>
         
+    <!-- navbar para navegação e pesquisa -->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Pesquisa</button>
                     </form>
                 </div>
@@ -48,10 +48,10 @@
         </nav>
     </section>
     
-
-    <section class="container d-flex flex-wrap">
+    <!-- estante de produtos -->
+    <section class="d-flex flex-wrap" style="justify-content: center;">
     <?php $i = 0; while ($i <= 14){$i++ ?>
-                <div class="card m-3" style="width: 20rem;">
+                <div class="card" style="margin: 0 20px 40px; width: 20rem;">
                     <img src="https://place-hold.it/300x160" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -63,15 +63,15 @@
                 </div>
             <?php }; ?>
         </section>
+
+    <!-- rodapé -->
     <footer>
-
-<div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
-    <h3>Contato</h3>
-    <a href="#">Topo da página</a>
-</div>
-
-
+    <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
+        <a href="">Contato</a>
+        <a href="#">Topo da página</a>
+    </div>
     </footer>
+
     <script src="js/bootstrap.min.js"></script>
 </body>
 
