@@ -51,23 +51,26 @@
     </section>
 
     <!-- descrição de produto -->
-    <main class="mx-auto col-7" style="border: solid 1px;">
+    <main class="mx-auto px-1 pb-1 w-50" style="border: solid 1px;">
         <div class="m-5 title">
             <h1>titulo</h1>
         </div>
-        <div class="">
+        <div>
             <img class="img-fluid" src="https://place-hold.it/685x400" style="width: 100%;" alt="">
         </div>
-        <div class="mt-5 mb-5 text-center conteudo">
+        <div class="text-center conteudo" style="justify-content: center;">
         <textarea class="img-fluid" name="variavel" id="" cols="90" rows="10"></textarea>
         </div>
     </main>
 
-    <!-- rodapé com formulario de comentario -->
-    <footer class="mx-auto col-7">
-    <h2 style="margin-top: 32px;">Deixe um comentário</h2><br>
-    <textarea class="img-fluid" name="" id="" cols="104" rows="3"></textarea>
+    <!-- caixa para deixar comentario -->
+    <div class="mx-auto w-50">
+        <h2 style="margin-top: 32px;">Deixe um comentário</h2><br>
+        <textarea class="img-fluid" name="" id="" cols="104" rows="3"></textarea>
+    </div>
 
+    <!-- rodapé-->
+    <footer>
     <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
     <a href="">Contato</a>
     <a href="#">Topo da página</a>

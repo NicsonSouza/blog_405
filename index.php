@@ -15,14 +15,16 @@
     <header>
         <div class="conteudo">
             <img src="https://place-hold.it/1028x280" alt="">
-            <div class="subtitulo"><h3>subtitulo</h3></div>
+            <div class="subtitulo">
+                <h3>subtitulo</h3>
+            </div>
             <div class="media-social">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </header>
-        
+
     <!-- navbar para navegação e pesquisa -->
     <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
@@ -47,29 +49,31 @@
             </div>
         </nav>
     </section>
-    
+
     <!-- estante de produtos -->
     <section class="d-flex flex-wrap" style="justify-content: center;">
-    <?php $i = 0; while ($i <= 14){$i++ ?>
-                <div class="card" style="margin: 0 20px 40px; width: 20rem;">
-                    <img src="https://place-hold.it/300x160" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <a class="btn btn-primary" type="button" href="post.php">continuar lendo</a>
-                    </ul>
+        <?php $i = 0;
+        while ($i <= 14) {
+            $i++ ?>
+            <div class="card" style="margin: 0 20px 40px; width: 20rem;">
+                <img src="https://place-hold.it/300x160" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-            <?php }; ?>
-        </section>
+                <ul class="list-group list-group-flush">
+                    <a class="btn btn-primary" type="button" href="post.php">continuar lendo</a>
+                </ul>
+            </div>
+        <?php }; ?>
+    </section>
 
     <!-- rodapé -->
     <footer>
-    <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
-        <a href="">Contato</a>
-        <a href="#">Topo da página</a>
-    </div>
+        <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
+            <a href="">Contato</a>
+            <a href="#">Topo da página</a>
+        </div>
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
