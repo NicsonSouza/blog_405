@@ -65,7 +65,7 @@
 
     <!-- rodapé com formulario de comentario -->
     <footer class="mx-auto col-7">
-    <h2 style="margin-top: 32px;">Deixe um comentário</h2>
+    <h2 style="margin-top: 32px;">Deixe um comentário</h2><br>
     <textarea class="img-fluid" name="" id="" cols="104" rows="3"></textarea>
 
     <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
