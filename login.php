@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Login</title>
 </head>
+
 <body>
 
-<!-- navbar para naveção e pesquisa -->
-<section>
+    <!-- navbar para naveção e pesquisa -->
+    <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +45,8 @@
             <label class="form-label">Senha: </label>
             <input class="form-control" type="password" placeholder="senha" name="">
             <div class="text-center">
-            <button class="btn btn-primary mt-3" type="submit">Logar</button>
-            </div>    
+                <button class="btn btn-primary mt-3" type="submit">Logar</button>
+            </div>
         </div>
     </form>
 
@@ -54,7 +56,8 @@
             <a href="">Contato</a>
         </div>
     </footer>
-    
+
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

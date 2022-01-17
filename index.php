@@ -12,6 +12,8 @@
 </head>
 
 <body>
+
+    <!-- cabeçalho -->
     <header>
         <div class="conteudo">
             <img src="https://place-hold.it/1028x280" alt="">
@@ -41,8 +43,8 @@
                             <a class="nav-link" href="cad_usuario.php">Cadastro</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search">
+                    <form action="pesquisa_card.php" method="POST" class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search" name="nome">
                         <button class="btn btn-outline-success" type="submit">Pesquisa</button>
                     </form>
                 </div>
@@ -51,23 +53,9 @@
     </section>
 
     <!-- estante de produtos -->
-    <section class="d-flex flex-wrap" style="justify-content: center;">
-        <?php $i = 0;
-        while ($i <= 14) {
-            $i++ ?>
-            <div class="card" style="margin: 0 20px 40px; width: 20rem;">
-                <img src="https://place-hold.it/300x160" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <a class="btn btn-primary" type="button" href="post.php">continuar lendo</a>
-                </ul>
-            </div>
-        <?php }; ?>
-    </section>
-
+    <?php require 'estante_cards.php'; ?>
+    <?php require 'cards.php'; ?>
+    
     <!-- rodapé -->
     <footer>
         <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">

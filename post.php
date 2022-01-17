@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Post</title>
 </head>
+
 <body>
 
+    <!-- cabeçalho -->
     <header>
         <div class="conteudo">
             <img src="https://place-hold.it/1028x280" alt="">
-            <div class="subtitulo"><h3>subtitulo</h3></div>
+            <div class="subtitulo">
+                <h3>subtitulo</h3>
+            </div>
             <div class="media-social">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </header>
-        
+
     <!-- navbar para navegação e pesquisa -->
     <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
@@ -51,17 +56,19 @@
     </section>
 
     <!-- descrição de produto -->
-    <main class="mx-auto px-1 pb-1 w-50" style="border: solid 1px;">
+    <?php require 'estante_cards.php'; while($cards = $sql->fetch(PDO::FETCH_ASSOC)){ ?>
+    <main class="mx-auto px-1 w-50" style="border: solid 1px;">
         <div class="m-5 title">
-            <h1>titulo</h1>
+            <h1><?= $cards['titulo']; ?></h1>
         </div>
         <div>
-            <img class="img-fluid" src="https://place-hold.it/685x400" style="width: 100%;" alt="">
+            <img class="img-fluid" src="img/<?= $cards['titulo']; ?>.jpg" style="width: 100%;" alt="">
         </div>
-        <div class="text-center conteudo" style="justify-content: center;">
-        <textarea class="img-fluid" name="variavel" id="" cols="90" rows="10"></textarea>
+        <div class="text-center conteudo mt-2" style="justify-content: center;">
+            <p><?= $cards['conteudo']; ?></p>
         </div>
     </main>
+    <?php } ?>
 
     <!-- caixa para deixar comentario -->
     <div class="mx-auto w-50">
@@ -71,13 +78,14 @@
 
     <!-- rodapé-->
     <footer>
-    <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
-    <a href="">Contato</a>
-    <a href="#">Topo da página</a>
-    <a href="index.php">Pagina inicial</a>
-</div>
+        <div class="contato" style="margin:32px; display: flex; justify-content: space-around;">
+            <a href="">Contato</a>
+            <a href="#">Topo da página</a>
+            <a href="index.php">Pagina inicial</a>
+        </div>
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
